@@ -1,0 +1,9 @@
+install:
+    - sudo apt-get -qq update
+    - sudo apt-get install -y libxml2-utils
+
+script:
+    - xmllint info.xsd --noout
+    - xmllint ModuleConfig.xsd --noout
+    - find examples/ -type f -iname "info.xml" -exec xmllint '{}' --noout --schema info.xsd \;
+    - find examples/ -type f -iname "ModuleConfig.xml" -exec xmllint '{}' --noout --schema ModuleConfig.xsd \;
