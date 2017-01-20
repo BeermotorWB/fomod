@@ -1,0 +1,16 @@
+<!-- For this minimal config,
+     all we're about to do
+     is install some files
+     without need for user
+     interaction
+     -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="https://github.com/fomod-lang/fomod/blob/5.0/ModuleConfig.xsd">
+    <moduleName>Minimal Example</moduleName>
+    <requiredInstallFiles>
+        <!-- Only moduleName is actually required
+             but what fun would that be...
+             -->
+        <file source="data_file" destination=""/>
+    </requiredInstallFiles>
+</config>
