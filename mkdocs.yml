@@ -1,0 +1,5 @@
+site_name: FOMOD - A game-agnostic format for mod installers.
+repo_url: https://github.com/fomod-lang/fomod
+theme: readthedocs
+pages:
+    - 'index.md'
