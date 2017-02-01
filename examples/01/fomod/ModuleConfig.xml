@@ -1,7 +1,5 @@
-<!-- For this minimal config,
-     all we're about to do
-     is install some files
-     without need for user
+<!-- For this minimal config, all we're about to do
+     is install some files without need for user
      interaction
      -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
