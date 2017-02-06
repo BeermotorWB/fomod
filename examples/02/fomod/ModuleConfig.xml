@@ -4,15 +4,8 @@
      -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:noNamespaceSchemaLocation="https://github.com/fomod-lang/fomod/blob/5.0/ModuleConfig.xsd">
-    <moduleName>Example Mod</moduleName>
 
-    <!-- Now before installing our lovely and empty
-         data file in requiredInstallFiles,
-         we need to make sure other_file exists
-         -->
-    <requiredInstallFiles>
-        <file source="data_file" destination=""/>
-    </requiredInstallFiles>
+    <moduleName>Example Mod</moduleName>
 
     <!-- The "And" operator means that all dependencies
          below this tag must be true for it to be true
@@ -24,4 +17,13 @@
              -->
         <fileDependency file="other_file" state="Active"/>
     </moduleDependencies>
+
+    <!-- Now before installing our lovely and empty
+         data file in requiredInstallFiles,
+         we need to make sure other_file exists
+         -->
+    <requiredInstallFiles>
+        <file source="data_file" destination=""/>
+    </requiredInstallFiles>
+
 </config>

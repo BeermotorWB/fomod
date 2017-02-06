@@ -5,5 +5,5 @@ install:
 script:
     - xmllint info.xsd --noout
     - xmllint ModuleConfig.xsd --noout
-    - find examples/ -type f -iname "info.xml" -exec xmllint '{}' --noout --schema info.xsd \;
-    - find examples/ -type f -iname "ModuleConfig.xml" -exec xmllint '{}' --noout --schema ModuleConfig.xsd \;
+    - find examples/ -name "info.xml" -print0 | xargs -0 -n1 xmllint --noout --schema info.xsd
+    - find examples/ -name "ModuleConfig.xml" -print0 | xargs -0 -n1 xmllint --noout --schema ModuleConfig.xsd
