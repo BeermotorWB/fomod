@@ -3,3 +3,4 @@ repo_url: https://github.com/fomod-lang/fomod
 theme: readthedocs
 pages:
     - 'index.md'
+    - 'tutorial.md'
