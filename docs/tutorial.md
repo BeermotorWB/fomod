@@ -1,7 +1,9 @@
-# A Simple Installer
+# A FOMOD Tutorial
 
 Let's jump right in - we have finished our mod and we need to provide
 an installer.
+
+## A Simple Installer
 
 We'll start with a simple example, here's how our package looks:
 
@@ -85,7 +87,7 @@ And that's it. We've just made a tiny installer that will successfully install
 **example.plugin** for our users.
 
 
-# Dependencies Network
+## Dependencies Network
 
 Right, our installer is a little too simple. Let's say you added a few more
 things to your plugin, that depended on another plugin. Why waste time reiventing
