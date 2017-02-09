@@ -10,3 +10,10 @@ authors and installer authors.
 ## Contents
 
 * [Tutorial](tutorial.md)
+
+## XML Files
+
+You can find the schema documentation for each *FOMOD* file here:
+
+- [Info Schema](_static/info.html)
+- [ModuleConfig Schema](_static/ModuleConfig.html)

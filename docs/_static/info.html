@@ -1,0 +1,545 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>XML Schema Documentation</title>
+    <meta charset="UTF-8"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <style type="text/css">
+/* XS3P specific CSS */
+body {
+    background-color: #FFF;
+    padding-top: 50px;
+}
+
+.nav > li.active {
+    background-color: #FFF;
+}
+.nav > li > a:hover {
+    background-color: #CCC;
+}
+
+code {
+    color: #333;
+}
+
+.container-fluid {
+    padding: 15px 15px;
+}
+
+.nav-sub-item > a {
+    padding-left: 30px !important;
+}
+
+a.name {
+    padding-top: 65px;
+}
+
+h3.xs3p-subsection-heading {
+    margin-bottom: 30px;
+}
+
+section, #top {
+    margin-top: -65px;
+    padding-top: 65px;
+}
+
+pre {
+    padding: 5px;
+}
+
+.xs3p-sidenav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #EEE;
+    border-radius: 10px;
+}
+.xs3p-navbar-title {
+    color: #FFF !important;
+    font-weight: bold;
+}
+.xs3p-in-panel-table {
+    margin-bottom: 0px;
+}
+.xs3p-sidebar {
+    position: static;
+}
+.xs3p-collapse-button {
+    font-size: 8pt;
+}
+.panel-heading .xs3p-panel-title:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: left;
+    color: grey;
+    margin-right: 10px;
+}
+.panel-heading .xs3p-panel-title.collapsed:after {
+    content: "\e080";
+}
+.panel-info > .panel-heading .xs3p-panel-title:after {
+    color: white;
+}
+.xs3p-panel-help {
+    color: #CCCCCC;
+    cursor: pointer;
+}
+
+.panel-group {
+    margin-bottom: 20px;
+}
+
+.btn-doc {
+    padding: 0px;
+    border: 0px none;
+    background: none repeat scroll 0% 0% transparent;
+    line-height: 1;
+    font-size: 12px;
+}
+
+.unpre {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    white-space: normal;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+.popover {
+    max-width: 400px;
+}
+
+// Syntax highlighting
+.codehilite .err {color: #FFF; background-color: #D2322D; font-weight: bold;} /* Error */
+.codehilite .c   {color: #999;}
+.codehilite .cs  {color: #999; font-style: italic;}
+.codehilite .nt  {color: #2F6F9F;}
+.codehilite .nn  {color: #39B3D7;}
+.codehilite .na  {color: #47A447;}
+.codehilite .s   {color: #D2322D;}
+.codehilite a       {color: inherit !important; text-decoration: underline !important;}
+.codehilite a:hover {opacity: 0.7 !important;}
+
+@media (min-width: 992px) {
+    .xs3p-sidebar {
+        position: fixed;
+        top: 65px;
+        width: 22%;
+    }
+}
+</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagedown/1.0/Markdown.Converter.js">
+              // Import Markdown converter for comments processing
+            </script>
+  </head>
+  <body data-spy="scroll" data-target=".xs3p-sidebar" data-offset="65">
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+          </button>
+          <a class="navbar-brand xs3p-navbar-title">XML Schema Documentation</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3" id="menu-cols">
+          <div class="xs3p-sidebar hidden-print" role="complementary">
+            <ul class="nav nav-list xs3p-sidenav">
+              <li>
+                <a href="#SchemaProperties">Schema Document Properties</a>
+              </li>
+              <li>
+                <a href="#SchemaDeclarations">Global Declarations</a>
+              </li>
+              <li class="nav-sub-item">
+                <a href="#element_fomod">Element: <strong>fomod</strong></a>
+              </li>
+              <li>
+                <a href="#Glossary">Glossary</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9 content" role="main" id="xs3p-content">
+          <div class="modal fade fomod" id="idm46600344449632-popup" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog unpre">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h4 class="modal-title" id="idm46600344449632-label">Element fomod</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="annotation documentation" id="wdoc-idm46600344449632-hidden">
+                    <div class="hidden" id="idm46600344449632-hidden-doc-raw">
+                The following tags are to be filled in according
+                to their tags, shouldn't be hard to figure out.
+            </div>
+                    <div class="xs3p-doc" id="idm46600344449632-hidden-doc"> </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1>
+            <a id="top">XML Schema Documentation</a>
+          </h1>
+          <section id="SectionSchemaProperties">
+            <h2>
+              <a id="SchemaProperties">Schema Document Properties</a>
+            </h2>
+            <div class="panel-group" id="schema-properties-table-panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="xs3p-panel-title" data-toggle="collapse" data-parent="#schema-properties-table-panel-group" href="#schema-properties-table-collapse">Properties</a>
+                    <span class="pull-right xs3p-panel-help">
+                      <button type="button" class="btn btn-doc" data-container="body" data-toggle="popover" data-placement="left" data-html="true" data-content="This table displays the properties of the schema component.">
+                        <span class="glyphicon glyphicon-question-sign"> </span>
+                      </button>
+                    </span>
+                  </h4>
+                </div>
+                <div id="schema-properties-table-collapse" class="panel-collapse collapse in">
+                  <table class="table table-striped xs3p-in-panel-table">
+                    <tbody>
+                      <tr>
+                        <th>
+                          <a title="Look up 'Target Namespace' in glossary" href="#term_TargetNS">Target Namespace</a>
+                        </th>
+                        <td>None</td>
+                      </tr>
+                      <tr>
+                        <th>Version</th>
+                        <td>2.0</td>
+                      </tr>
+                      <tr>
+                        <th>Element and Attribute Namespaces</th>
+                        <td>
+                          <ul>
+                            <li>Global element and attribute declarations belong to this schema's target namespace.</li>
+                            <li>By default, local element declarations have no namespace.</li>
+                            <li>By default, local attribute declarations have no namespace.</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="panel-group" id="schema-doc-panel-panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="xs3p-panel-title" data-toggle="collapse" data-parent="#schema-doc-panel-panel-group" href="#schema-doc-panel-collapse">Documentation</a>
+                    <span class="pull-right xs3p-panel-help">
+                      <button type="button" class="btn btn-doc" data-container="body" data-toggle="popover" data-placement="left" data-html="true" data-content="This panel contains the schema components documentation.">
+                        <span class="glyphicon glyphicon-question-sign"> </span>
+                      </button>
+                    </span>
+                  </h4>
+                </div>
+                <div id="schema-doc-panel-collapse" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                          No documentation provided.
+                        </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-group" id="schema-declared-namespaces-panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="xs3p-panel-title" data-toggle="collapse" data-parent="#schema-declared-namespaces-panel-group" href="#schema-declared-namespaces-collapse">Declared Namespaces</a>
+                  </h4>
+                </div>
+                <div id="schema-declared-namespaces-collapse" class="panel-collapse collapse in">
+                  <table class="table table-striped xs3p-in-panel-table">
+                    <thead>
+                      <tr>
+                        <th>Prefix</th>
+                        <th>Namespace</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a id="ns_xml">xml</a>
+                        </td>
+                        <td>http://www.w3.org/XML/1998/namespace</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a id="ns_xs">xs</a>
+                        </td>
+                        <td>http://www.w3.org/2001/XMLSchema</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="panel-group" id="schema-schemaComponent-panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="xs3p-panel-title collapsed" data-toggle="collapse" data-parent="#schema-schemaComponent-panel-group" href="#schema-schemaComponent-collapse">Schema Component Representation</a>
+                    <span class="pull-right xs3p-panel-help">
+                      <button type="button" class="btn btn-doc" data-container="body" data-toggle="popover" data-placement="left" data-html="true" data-content="The Schema Component Representation table above displays the underlying XML representation of the schema component. (Annotations are not shown.)">
+                        <span class="glyphicon glyphicon-question-sign"> </span>
+                      </button>
+                    </span>
+                  </h4>
+                </div>
+                <div id="schema-schemaComponent-collapse" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <pre class="codehilite"><span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:schema</span> <span class="na">version=</span><span class="s">"2.0"</span><span class="nt">&gt;</span>
+<span class="scContent">...</span>
+<span class="nt">&lt;/<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:schema&gt;</span>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="text-align: right; clear: both;">
+              <a href="#top" title="Go to top of page">
+                <span class="glyphicon glyphicon-chevron-up"> </span>
+              </a>
+            </div>
+            <hr/>
+          </section>
+          <section id="SectionSchemaDeclarations">
+            <h2>
+              <a id="SchemaDeclarations">Global Declarations</a>
+            </h2>
+            <h3 class="xs3p-subsection-heading">Element: <a id="element_fomod" class="name" data-html="true" data-placement="bottom" data-toggle="tooltip" title="Schema component name.">fomod</a></h3>
+            <div class="panel-group" id="element_fomod-properties-table-panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="xs3p-panel-title" data-toggle="collapse" data-parent="#element_fomod-properties-table-panel-group" href="#element_fomod-properties-table-collapse">Properties</a>
+                    <span class="pull-right xs3p-panel-help">
+                      <button type="button" class="btn btn-doc" data-container="body" data-toggle="popover" data-placement="left" data-html="true" data-content="This table displays the properties of the schema component.">
+                        <span class="glyphicon glyphicon-question-sign"> </span>
+                      </button>
+                    </span>
+                  </h4>
+                </div>
+                <div id="element_fomod-properties-table-collapse" class="panel-collapse collapse in">
+                  <table class="table table-striped xs3p-in-panel-table">
+                    <tbody>
+                      <tr>
+                        <th>Name</th>
+                        <td>fomod</td>
+                      </tr>
+                      <tr>
+                        <th>Type</th>
+                        <td>Locally-defined complex type</td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a title="Look up 'Nillable' in glossary" href="#term_Nillable">Nillable</a>
+                        </th>
+                        <td>no</td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a title="Look up 'Abstract' in glossary" href="#term_Abstract">Abstract</a>
+                        </th>
+                        <td>no</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="panel-group" id="element_fomod-doc-panel-panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="xs3p-panel-title" data-toggle="collapse" data-parent="#element_fomod-doc-panel-panel-group" href="#element_fomod-doc-panel-collapse">Documentation</a>
+                    <span class="pull-right xs3p-panel-help">
+                      <button type="button" class="btn btn-doc" data-container="body" data-toggle="popover" data-placement="left" data-html="true" data-content="This panel contains the schema components documentation.">
+                        <span class="glyphicon glyphicon-question-sign"> </span>
+                      </button>
+                    </span>
+                  </h4>
+                </div>
+                <div id="element_fomod-doc-panel-collapse" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <div class="annotation documentation" id="wdoc-idm46600344449632">
+                      <div class="hidden" id="idm46600344449632-doc-raw">
+                The following tags are to be filled in according
+                to their tags, shouldn't be hard to figure out.
+            </div>
+                      <div class="xs3p-doc" id="idm46600344449632-doc"> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-group" id="element_fomod-instance-table-panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="xs3p-panel-title" data-toggle="collapse" data-parent="#element_fomod-instance-table-panel-group" href="#element_fomod-instance-table-collapse">XML Instance Representation</a>
+                    <span class="pull-right xs3p-panel-help">
+                      <button type="button" class="btn btn-doc" data-container="body" data-toggle="popover" data-placement="left" data-html="true" data-content="The XML Instance Representation table shows the schema component's content as an XML instance.&#10;         &lt;ul&gt;&#10;         &lt;li&gt;The minimum and maximum occurrence of elements and attributes are provided in square brackets, e.g. [0..1].&lt;/li&gt;&#10;         &lt;li&gt;Model group information are shown in gray, e.g. Start Choice ... End Choice.&lt;/li&gt;&#10;         &lt;li&gt;For type derivations, the elements and attributes that have been added to or changed from the base type's content are shown in &lt;strong&gt;bold&lt;/strong&gt;&lt;/li&gt;&#10;         &lt;li&gt;If an element/attribute has a fixed value, the fixed value is shown in green.&lt;/li&gt;&#10;         &lt;li&gt;More stuff&lt;/li&gt;&#10;         &lt;li&gt;If a local element/attribute has documentation, it will be displayed in a window that pops up when the question mark inside the attribute or next to the element is clicked.&lt;/li&gt;&#10;         &lt;/ul&gt;&#10;      ">
+                        <span class="glyphicon glyphicon-question-sign"> </span>
+                      </button>
+                    </span>
+                  </h4>
+                </div>
+                <div id="element_fomod-instance-table-collapse" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <pre class="codehilite"><span class="nt">&lt;fomod</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;Name&gt;</span> <span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="nt">&lt;/Name&gt;</span> <span class="cs">[0..1]</span>
+   <span class="nt">&lt;Author&gt;</span> <span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="nt">&lt;/Author&gt;</span> <span class="cs">[0..1]</span>
+   <span class="nt">&lt;Version</span>
+    <span class="na">MachineVersion=</span><span class="s">"<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>"</span> <span class="cs">[0..1]</span>
+   <span class="nt">&gt;</span> <span class="cs">[0..1]</span> 
+       <span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>
+   <span class="nt">&lt;/Version&gt;</span>
+   <span class="nt">&lt;Description&gt;</span> <span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="nt">&lt;/Description&gt;</span> <span class="cs">[0..1]</span>
+   <span class="nt">&lt;Website&gt;</span> <span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="nt">&lt;/Website&gt;</span> <span class="cs">[0..1]</span>
+   <span class="nt">&lt;Id&gt;</span> <span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="nt">&lt;/Id&gt;</span> <span class="cs">[0..1]</span>
+<span class="nt">&lt;/fomod&gt;</span>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-group" id="element_fomod-schemaComponent-panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="xs3p-panel-title collapsed" data-toggle="collapse" data-parent="#element_fomod-schemaComponent-panel-group" href="#element_fomod-schemaComponent-collapse">Schema Component Representation</a>
+                    <span class="pull-right xs3p-panel-help">
+                      <button type="button" class="btn btn-doc" data-container="body" data-toggle="popover" data-placement="left" data-html="true" data-content="The Schema Component Representation table above displays the underlying XML representation of the schema component. (Annotations are not shown.)">
+                        <span class="glyphicon glyphicon-question-sign"> </span>
+                      </button>
+                    </span>
+                  </h4>
+                </div>
+                <div id="element_fomod-schemaComponent-collapse" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <pre class="codehilite"><span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:element</span> <span class="na">name=</span><span class="s">"fomod"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:complexType</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:sequence</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:element</span> <span class="na">name=</span><span class="s">"Name"</span> <span class="na">type=</span><span class="s">"<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>"</span> <span class="na">minOccurs=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+         <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:element</span> <span class="na">name=</span><span class="s">"Author"</span> <span class="na">type=</span><span class="s">"<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>"</span> <span class="na">minOccurs=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+         <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:element</span> <span class="na">name=</span><span class="s">"Version"</span> <span class="na">minOccurs=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:complexType</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:simpleContent</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:extension</span> <span class="na">base=</span><span class="s">"<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>"</span><span class="nt">&gt;</span>
+                     <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:attribute</span> <span class="na">name=</span><span class="s">"MachineVersion"</span> <span class="na">type=</span><span class="s">"<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>"</span><span class="nt">/&gt;</span>
+                  <span class="nt">&lt;/<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:extension&gt;</span>
+               <span class="nt">&lt;/<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:simpleContent&gt;</span>
+            <span class="nt">&lt;/<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:complexType&gt;</span>
+         <span class="nt">&lt;/<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:element&gt;</span>
+         <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:element</span> <span class="na">name=</span><span class="s">"Description"</span> <span class="na">type=</span><span class="s">"<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>"</span> <span class="na">minOccurs=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+         <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:element</span> <span class="na">name=</span><span class="s">"Website"</span> <span class="na">type=</span><span class="s">"<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>"</span> <span class="na">minOccurs=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+         <span class="nt">&lt;<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:element</span> <span class="na">name=</span><span class="s">"Id"</span> <span class="na">type=</span><span class="s">"<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span>"</span> <span class="na">minOccurs=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:sequence&gt;</span>
+   <span class="nt">&lt;/<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:complexType&gt;</span>
+<span class="nt">&lt;/<a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:element&gt;</span>
+</pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="text-align: right; clear: both;">
+              <a href="#top" title="Go to top of page">
+                <span class="glyphicon glyphicon-chevron-up"> </span>
+              </a>
+            </div>
+            <hr/>
+          </section>
+          <div id="glossary">
+            <h2>
+              <a id="Glossary">Glossary</a>
+            </h2>
+            <p><span class="glossaryTerm"><a id="term_Abstract">Abstract</a> </span>(Applies to complex type definitions and element declarations). An abstract element or complex type cannot used to validate an element instance. If there is a reference to an abstract element, only element declarations that can substitute the abstract element can be used to validate the instance. For references to abstract type definitions, only derived types can be used.</p>
+            <p><span class="glossaryTerm"><a id="term_All">All Model Group</a> </span>Child elements can be provided <em>in any order</em> in instances. See: <a title="http://www.w3.org/TR/xmlschema-1/#element-all" href="http://www.w3.org/TR/xmlschema-1/#element-all">http://www.w3.org/TR/xmlschema-1/#element-all</a>.</p>
+            <p><span class="glossaryTerm"><a id="term_Choice">Choice Model Group</a> </span><em>Only one</em> from the list of child elements and model groups can be provided in instances. See: <a title="http://www.w3.org/TR/xmlschema-1/#element-choice" href="http://www.w3.org/TR/xmlschema-1/#element-choice">http://www.w3.org/TR/xmlschema-1/#element-choice</a>.</p>
+            <p><span class="glossaryTerm"><a id="term_CollapseWS">Collapse Whitespace Policy</a> </span>Replace tab, line feed, and carriage return characters with space character (Unicode character 32). Then, collapse contiguous sequences of space characters into single space character, and remove leading and trailing space characters.</p>
+            <p><span class="glossaryTerm"><a id="term_ElemBlock">Disallowed Substitutions</a> </span>(Applies to element declarations). If <em>substitution</em> is specified, then <a title="Look up 'substitution group' in glossary" href="#term_SubGroup">substitution group</a> members cannot be used in place of the given element declaration to validate element instances. If <em>derivation methods</em>, e.g. extension, restriction, are specified, then the given element declaration will not validate element instances that have types derived from the element declaration's type using the specified derivation methods. Normally, element instances can override their declaration's type by specifying an <code>xsi:type</code> attribute.</p>
+            <p><span class="glossaryTerm"><a id="term_Key">Key Constraint</a> </span>Like <a title="Look up 'Uniqueness Constraint' in glossary" href="#term_Unique">Uniqueness Constraint</a>, but additionally requires that the specified value(s) must be provided. See: <a title="http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions" href="http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions">http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions</a>.</p>
+            <p><span class="glossaryTerm"><a id="term_KeyRef">Key Reference Constraint</a> </span>Ensures that the specified value(s) must match value(s) from a <a title="Look up 'Key Constraint' in glossary" href="#term_Key">Key Constraint</a> or <a title="Look up 'Uniqueness Constraint' in glossary" href="#term_Unique">Uniqueness Constraint</a>. See: <a title="http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions" href="http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions">http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions</a>.</p>
+            <p><span class="glossaryTerm"><a id="term_ModelGroup">Model Group</a> </span>Groups together element content, specifying the order in which the element content can occur and the number of times the group of element content may be repeated. See: <a title="http://www.w3.org/TR/xmlschema-1/#Model_Groups" href="http://www.w3.org/TR/xmlschema-1/#Model_Groups">http://www.w3.org/TR/xmlschema-1/#Model_Groups</a>.</p>
+            <p><span class="glossaryTerm"><a id="term_Nillable">Nillable</a> </span>(Applies to element declarations). If an element declaration is nillable, instances can use the <code>xsi:nil</code> attribute. The <code>xsi:nil</code> attribute is the boolean attribute, <em>nil</em>, from the <em>http://www.w3.org/2001/XMLSchema-instance</em> namespace. If an element instance has an <code>xsi:nil</code> attribute set to true, it can be left empty, even though its element declaration may have required content.</p>
+            <p><span class="glossaryTerm"><a id="term_Notation">Notation</a> </span>A notation is used to identify the format of a piece of data. Values of elements and attributes that are of type, NOTATION, must come from the names of declared notations. See: <a title="http://www.w3.org/TR/xmlschema-1/#cNotation_Declarations" href="http://www.w3.org/TR/xmlschema-1/#cNotation_Declarations">http://www.w3.org/TR/xmlschema-1/#cNotation_Declarations</a>.</p>
+            <p><span class="glossaryTerm"><a id="term_PreserveWS">Preserve Whitespace Policy</a> </span>Preserve whitespaces exactly as they appear in instances.</p>
+            <p><span class="glossaryTerm"><a id="term_TypeFinal">Prohibited Derivations</a> </span>(Applies to type definitions). Derivation methods that cannot be used to create sub-types from a given type definition.</p>
+            <p><span class="glossaryTerm"><a id="term_TypeBlock">Prohibited Substitutions</a> </span>(Applies to complex type definitions). Prevents sub-types that have been derived using the specified derivation methods from validating element instances in place of the given type definition.</p>
+            <p><span class="glossaryTerm"><a id="term_ReplaceWS">Replace Whitespace Policy</a> </span>Replace tab, line feed, and carriage return characters with space character (Unicode character 32).</p>
+            <p><span class="glossaryTerm"><a id="term_Sequence">Sequence Model Group</a> </span>Child elements and model groups must be provided <em>in the specified order</em> in instances. See: <a title="http://www.w3.org/TR/xmlschema-1/#element-sequence" href="http://www.w3.org/TR/xmlschema-1/#element-sequence">http://www.w3.org/TR/xmlschema-1/#element-sequence</a>.</p>
+            <p><span class="glossaryTerm"><a id="term_SubGroup">Substitution Group</a> </span>Elements that are <em>members</em> of a substitution group can be used wherever the <em>head</em> element of the substitution group is referenced.</p>
+            <p><span class="glossaryTerm"><a id="term_ElemFinal">Substitution Group Exclusions</a> </span>(Applies to element declarations). Prohibits element declarations from nominating themselves as being able to substitute a given element declaration, if they have types that are derived from the original element's type using the specified derivation methods.</p>
+            <p><span class="glossaryTerm"><a id="term_TargetNS">Target Namespace</a> </span>The target namespace identifies the namespace that components in this schema belongs to. If no target namespace is provided, then the schema components do not belong to any namespace.</p>
+            <p><span class="glossaryTerm"><a id="term_Unique">Uniqueness Constraint</a> </span>Ensures uniqueness of an element/attribute value, or a combination of values, within a specified scope. See: <a title="http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions" href="http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions">http://www.w3.org/TR/xmlschema-1/#cIdentity-constraint_Definitions</a>.</p>
+            <div style="text-align: right; clear: both;">
+              <a href="#top" title="Go to top of page">
+                <span class="glyphicon glyphicon-chevron-up"> </span>
+              </a>
+            </div>
+            <hr/>
+          </div>
+          <p class="footer">Generated by <a href="http://github.com/bitfehler/xs3p">xs3p-ch</a> (fork of <a href="http://xml.fiforms.org/xs3p/">xs3p</a>)
+               . Last Modified: <script type="text/javascript">
+<!--
+document.write(document.lastModified);
+// -->
+</script></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js">
+              // Import JQuery, required for Bootstrap
+            </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js">
+              // Import Bootstrap JS code
+            </script>
+    <script>
+
+               $(function () { $("[data-toggle='tooltip']").tooltip(); });
+               $(function () { $("[data-toggle='popover']").popover(); });
+
+               var c = new Markdown.Converter();
+               $('.xs3p-doc').each(function(i, obj) {
+                  var rawDocID = '#' + $(this).attr('id') + '-raw';
+                  var indent = $(rawDocID).html().match("^\\n[\\t ]*");
+                  if (!(indent === null)) {
+                     normalized = $(rawDocID).html().replace(new RegExp(indent[0], "gm"), "\n");
+                  } else {
+                     normalized = $(rawDocID).html();
+                  }
+                  $(this).html(c.makeHtml(normalized));
+                  $(this).find('code,pre').each(function(i, block) {
+                     $(this).html($(this).text());
+                  });
+               });
+
+               $(window).scroll(function() {
+                  if ($(".xs3p-sidebar").css("position") == "fixed" && $(window).height() < $(".xs3p-sidebar").height()) {
+                     var perc = $(window).scrollTop() / $("#xs3p-content").height();
+                     var overflow = $(".xs3p-sidebar").height() + 105 - $(window).height();
+                     $(".xs3p-sidebar").css("top", (65 - Math.round(overflow * perc)) + "px");
+                  }
+               });
+               $(window).resize(function() {
+                  if ($(".xs3p-sidebar").css("position") == "fixed") {
+                     $(".xs3p-sidebar").css("top", "65px");
+                  }
+               });
+               </script>
+  </body>
+</html>
